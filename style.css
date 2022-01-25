@@ -1,0 +1,93 @@
+body {
+    background-color: #2C3E50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.block {
+    display: block;
+}
+
+.digit {
+    font-size: 150px;
+    font-weight: bold;
+}
+
+
+/* alphabets like hours ,minutes and seconds  */
+
+.alpha {
+    font-size: 25px;
+}
+
+
+/* for buttons like reset atart and stop  */
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 23px;
+    padding: 10px 19px;
+    color: white;
+    cursor: pointer;
+}
+
+#start {
+    background-color: rgb(202, 56, 30);
+    border: 1px solid rgb(202, 56, 30);
+}
+
+#stop {
+    background-color: rgba(47, 235, 88, 0.849);
+    border: 1px solid rgba(47, 235, 88, 0.849);
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+#reset {
+    background-color: #3498DB;
+    border: 1px solid #3498DB;
+}
+
+
+/* media queries */
+
+@media (max-width:500px) {
+    .digit {
+        font-size: 55px;
+    }
+    .alpha {
+        font-size: 10px;
+    }
+    button {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+    #stop {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width:501px) and (max-width:800px) {
+    .digit {
+        font-size: 90px;
+    }
+    .alpha {
+        font-size: 20px;
+    }
+    button {
+        font-size: 20px;
+        padding: 9px 16px;
+    }
+    #stop {
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+}
